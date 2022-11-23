@@ -18,7 +18,7 @@ public class BuildingManagementSystem {
 
     public void removeBuilding(UUID id) {
         for (int i = 0; i < buildings.size(); i++) {
-            if (buildings.get(i).getID() == id){
+            if (buildings.get(i).getID() == id) {
                 buildings.remove(i);
                 break;
             }
@@ -28,8 +28,12 @@ public class BuildingManagementSystem {
     public String getOverview() {
         String s = "";
         for (Building b : buildings) {
-            s + "Building name: " + b.getName() + "\nUUID: " + b.getID() + "\nSensors"
-            b.getSensors() + "\nActuators" + b.getActuators() + "\n";
+            String buildingStr =
+                    "Building name: " + b.getName() +
+                    "\nUUID: " + b.getID().toString() +
+                    "\nSensors: " + b.getSensors() +
+                    "\nActuators: " + b.getActuators() + "\n";
+            "%s%s".formatted(s, buildingStr);
         }
         return s;
     }
