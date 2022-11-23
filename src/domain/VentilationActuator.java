@@ -1,7 +1,7 @@
 public class VentilationActuator extends Actuator {
     private double value;
 
-    public VentilationActuator(double){
+    public VentilationActuator(double value){
         this.value = value;
     }
 
