@@ -1,6 +1,6 @@
 package domain;
 
-public class Sensor extends Unit {
+public abstract class Sensor extends Unit {
 
     public Sensor(String name) {
         super(name);

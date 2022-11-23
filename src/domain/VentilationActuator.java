@@ -1,7 +1,8 @@
 package domain;
+
 public class VentilationActuator extends Actuator {
 
-    public VentilationActuator(String name){
+    public VentilationActuator(String name) {
         super(name);
     }
 
@@ -16,6 +17,7 @@ public class VentilationActuator extends Actuator {
 
 
     public String toString() {
-        return "the value of the VentilationActuator is" + this.value;
+        return "\nUUID: " + getID() + " Name: " + getName() + " Value: " + getValue();
     }
+
 }

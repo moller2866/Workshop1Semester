@@ -14,6 +14,6 @@ public class TemperatureSensor extends Sensor{
     }
     @Override
     public String toString() {
-        return "UUID" + getID() + "Name " + getName() + "Value " + getValue();
+        return "\nUUID: " + getID() + " Name: " + getName() + " Value: " + getValue();
     }
 }

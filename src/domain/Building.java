@@ -20,13 +20,13 @@ public class Building extends Unit {
         return actuatorList;
     }
 
-    public UUID addTemperatureSensor (String name) {
+    public UUID addTemperatureSensor(String name) {
         TemperatureSensor newTempSensor = new TemperatureSensor(name);
         sensorList.add(newTempSensor);
         return newTempSensor.getID();
     }
 
-    public UUID addCO2Sensor (String name) {
+    public UUID addCO2Sensor(String name) {
         CO2Sensor newCO2Sensor = new CO2Sensor(name);
         sensorList.add(newCO2Sensor);
         return newCO2Sensor.getID();
@@ -36,20 +36,22 @@ public class Building extends Unit {
         for (Sensor sensor : sensorList) {
             if (sensor.getID() == id) {
                 sensorList.remove(sensor);
+                break;
             }
         }
     }
 
-    public UUID addActuator (String name) {
-        Actuator newActuator = new Actuator(name);
+    public UUID addVentilationActuator(String name) {
+        Actuator newActuator = new VentilationActuator(name);
         actuatorList.add(newActuator);
         return newActuator.getID();
     }
 
-    public void removeActuator (UUID id) {
+    public void removeActuator(UUID id) {
         for (Actuator actuator : actuatorList) {
             if (actuator.getID() == id) {
                 actuatorList.remove(actuator);
+                break;
             }
         }
     }

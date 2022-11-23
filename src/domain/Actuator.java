@@ -1,21 +1,22 @@
 package domain;
 
-public class Actuator extends Unit {
+public abstract class Actuator extends Unit {
 
 
-    public Actuator(String name){
+    public Actuator(String name) {
         super(name);
     }
 
     private double value = 0;
-    public void setValue(double value){
+
+    public void setValue(double value) {
         setValue(value);
 
 
     }
 
 
-    public double getValue(){
+    public double getValue() {
         return value;
     }
 }
