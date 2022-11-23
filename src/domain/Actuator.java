@@ -10,9 +10,7 @@ public abstract class Actuator extends Unit {
     private double value = 0;
 
     public void setValue(double value) {
-        setValue(value);
-
-
+      this.value = value;
     }
 
 

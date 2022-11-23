@@ -11,8 +11,7 @@ public class VentilationActuator extends Actuator {
 
     @Override
     public void setValue(double value) {
-
-        super.setValue(value);
+        this.value = value;
     }
 
 
