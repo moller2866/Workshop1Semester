@@ -9,6 +9,6 @@ public class VentilationActuator extends Actuator {
 
 
     public String toString(){
-        return "Your ID is" + this.getId() + "Your name is" +this.getName() + "the value is" +value;
+        return "the value of the VentilationActuator is" + this.value;
     }
 }

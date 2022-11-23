@@ -1,6 +1,6 @@
 package domain;
 
-public class Building {
+public class Building extends Unit {
     private List<Sensor> sensorList = new ArrayList<Sensor>();
     private List<Actuator> actuatorList = new ArrayList<Actuator>();
 

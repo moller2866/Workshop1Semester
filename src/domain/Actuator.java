@@ -1,6 +1,12 @@
-public class Actuator extends Unit {
+package domain;
+
+public class Actuator {
     private double value;
 
+
+    public Actuator(){
+        this.value = value;
+    }
 
     public void setValue(){
 
