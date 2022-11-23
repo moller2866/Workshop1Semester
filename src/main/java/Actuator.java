@@ -1,10 +1,6 @@
-public class Actuator {
+public class Actuator extends Unit {
     private double value;
 
-
-    public Actuator(){
-        this.value = value;
-    }
 
     public void setValue(){
 
