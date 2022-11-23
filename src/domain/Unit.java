@@ -15,7 +15,7 @@ public class Unit {
         this.id = UUID.randomUUID();
     }
 
-    public UUID getId() {
+    public UUID getID() {
         return id;
     }
 
