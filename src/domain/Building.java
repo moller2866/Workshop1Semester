@@ -21,22 +21,36 @@ public class Building extends Unit {
     }
 
     public UUID addTemperatureSensor (String name) {
-        return null;
+        TemperatureSensor newTempSensor = new TemperatureSensor(name);
+        sensorList.add(newTempSensor);
+        return newTempSensor.getID();
     }
 
-    public UUID addCo2Sensor (String name) {
-        return null;
+    public UUID addCO2Sensor (String name) {
+        CO2Sensor newCO2Sensor = new CO2Sensor(name);
+        sensorList.add(newCO2Sensor);
+        return newCO2Sensor.getID();
     }
 
-    public void removeSensor (UUID id) {
-        // something
+    public void removeSensor(UUID id) {
+        for (Sensor sensor : sensorList) {
+            if (sensor.getID() == id) {
+                sensorList.remove(sensor);
+            }
+        }
     }
 
     public UUID addActuator (String name) {
-        return null;
+        Actuator newActuator = new Actuator(name);
+        actuatorList.add(newActuator);
+        return newActuator.getID();
     }
 
     public void removeActuator (UUID id) {
-        // something
+        for (Actuator actuator : actuatorList) {
+            if (actuator.getID() == id) {
+                actuatorList.remove(actuator);
+            }
+        }
     }
 }
