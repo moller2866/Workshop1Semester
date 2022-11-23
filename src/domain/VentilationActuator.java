@@ -2,8 +2,10 @@ public class VentilationActuator extends Actuator {
     private double value;
 
     public VentilationActuator(double value){
-        this.value = value;
+        super(value);
     }
+
+    private double value = 0;
 
 
     @Override
