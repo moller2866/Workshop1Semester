@@ -1,6 +1,10 @@
 public class VentilationActuator extends Actuator {
     private double value;
 
+    public VentilationActuator(){
+        this.value = value;
+    }
+
 
     @Override
     public void setValue() {
@@ -8,7 +12,7 @@ public class VentilationActuator extends Actuator {
     }
 
 
-    public String toString(){
+    public String toString() {
         return "the value of the VentilationActuator is" + this.value;
     }
 }
