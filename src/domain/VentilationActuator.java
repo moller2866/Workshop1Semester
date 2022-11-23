@@ -1,3 +1,4 @@
+package domain;
 public class VentilationActuator extends Actuator {
 
     public VentilationActuator(String name){
@@ -8,8 +9,9 @@ public class VentilationActuator extends Actuator {
 
 
     @Override
-    public void setValue() {
-        super.setValue();
+    public void setValue(double value) {
+
+        super.setValue(value);
     }
 
 
