@@ -2,6 +2,10 @@ package domain;
 
 public class CO2Sensor extends Sensor{
 
+    public CO2Sensor(String name) {
+        super(name);
+    }
+
     private double value = 0;
 
     @Override
