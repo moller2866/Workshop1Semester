@@ -8,6 +8,10 @@ public class Building extends Unit {
     private List<Sensor> sensorList = new ArrayList<Sensor>();
     private List<Actuator> actuatorList = new ArrayList<Actuator>();
 
+    public Building(String name) {
+        super(name);
+    }
+
     public List<Sensor> getSensors() {
         return sensorList;
     }
