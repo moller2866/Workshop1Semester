@@ -1,5 +1,3 @@
-package domain;
-
 public class VentilationActuator extends Actuator {
     private double value;
 
@@ -11,6 +9,6 @@ public class VentilationActuator extends Actuator {
 
 
     public String toString(){
-        return "the value of the domain.VentilationActuator is" + this.value;
+        return "the value of the VentilationActuator is" + this.value;
     }
 }

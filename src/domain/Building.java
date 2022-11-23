@@ -1,6 +1,10 @@
 package domain;
 
-public class Building {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+public class Building extends Unit {
     private List<Sensor> sensorList = new ArrayList<Sensor>();
     private List<Actuator> actuatorList = new ArrayList<Actuator>();
 
