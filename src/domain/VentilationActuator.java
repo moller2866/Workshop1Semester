@@ -1,8 +1,7 @@
 public class VentilationActuator extends Actuator {
-    private double value;
 
-    public VentilationActuator(double value){
-        super(value);
+    public VentilationActuator(String name){
+        super(name);
     }
 
     private double value = 0;
