@@ -10,6 +10,11 @@ public class Unit {
         return name;
     }
 
+    public Unit(String name) {
+        this.name = name;
+        this.id = UUID.randomUUID();
+    }
+
     public UUID getId() {
         return id;
     }
